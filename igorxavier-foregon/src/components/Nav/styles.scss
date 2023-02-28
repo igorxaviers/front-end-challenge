@@ -1,0 +1,67 @@
+.navbar {
+    background-color: var(--background-primary);
+
+    .navbar-container {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: 0 auto;
+        .navbar-container-content {
+            justify-content: space-between;
+            
+            .navbar-brand {
+                margin: 0.2em 1.5em 0 1.5em;
+            }
+
+            .link-creditcard{
+                font-weight: 600;
+                opacity: 0.6;
+                color: var(--text-color);
+            }
+
+            .button-score{
+                font-weight: 700;
+                padding: 1.25em 1.5em;
+                border: 2px solid var(--text-color);
+                color: var(--text-color);
+                border-radius: 0.25em;
+                transition: all 0.2s ease-in-out;
+
+                &:hover{
+                    background-color: var(--background-white);
+                    color: var(--background-primary);
+                }
+            }
+        }
+    }
+
+    button {
+        background-color: var(--background-primary);
+        border: none;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        .navbar-container {
+            padding: 1.25em 1.5em;
+
+            .navbar-container-content {
+
+                .navbar-brand{
+                    margin-left: 1.5em;
+                }
+
+                .link-creditcard{
+                    display: none;
+                }
+    
+                .button-score{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+    
