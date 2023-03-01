@@ -70,6 +70,15 @@
                 min-width: 50%;
                 flex: 1;
                 margin: 1em 0;
+
+                .card-info-details{
+                    min-height: 4em;
+
+                    p{
+                        font-size: 0.8em;
+                    }
+
+                }
             }
         }
 
