@@ -11,9 +11,10 @@ import 'react-loading-skeleton/dist/skeleton.css'
 interface ICardProps {
     minimumRevenue? : number;
     annuity?: string;
+    loading: boolean;
 }
 
-export default function CardInfo({minimumRevenue, annuity}: ICardProps) {
+export default function CardInfo({minimumRevenue, annuity, loading}: ICardProps) {
 
     return(
     <div className="container">
@@ -23,7 +24,9 @@ export default function CardInfo({minimumRevenue, annuity}: ICardProps) {
                     <img src={infoIcon} alt="Ícone indicador de informação" />
                     <div className="card-info-details">
                         <h3>Anuidade</h3>
+                        {loading ? <Skeleton height={20} width={150} count={2}/> :
                         <p>{ annuity }</p>
+                        }
                         <a className="mobile" href="">Pode ser grátis, veja como →</a>
                     </div>
                 </div>
@@ -32,7 +35,9 @@ export default function CardInfo({minimumRevenue, annuity}: ICardProps) {
                     <img src={infoIcon} alt="Ícone indicador de informação" />
                     <div className="card-info-details">
                         <h3>Renda mínima</h3>
+                        {loading ? <Skeleton height={20} width={150} /> :
                         <p>R$ { minimumRevenue }</p>
+                        }
                     </div>
                 </div>
 
