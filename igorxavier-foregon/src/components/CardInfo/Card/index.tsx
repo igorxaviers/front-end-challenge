@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { useFetch } from "../../../hooks/useFetch";
-import "./styles.scss"
+import { ICard } from "../../../types/Card";
+import Skeleton from 'react-loading-skeleton'
 import starIcon from "../../../assets/star-blue-icon.svg"
 import securityIcon from "../../../assets/shell-gray-icon.svg"
 import arrowRightIcon from "../../../assets/arrow-right-white-icon.svg"
 import CardInfo from "../CardInfo";
-import { ICard } from "../../../types/Card";
-import Skeleton from 'react-loading-skeleton'
+import "./styles.scss"
 import 'react-loading-skeleton/dist/skeleton.css'
 
 export default function Card() {
@@ -17,7 +17,7 @@ export default function Card() {
             <div className="container">
                 <div className="card flex">
                     <div className="card-image">
-                        {loading ? <Skeleton height={170} width={270}/> :
+                        {loading ? <Skeleton className="card-image-skeleton"/> :
                         <img src={cardData?.imageUrl} alt="Imagem do cartão de crédito oferecido"/>
                         }
                     </div>
@@ -28,13 +28,13 @@ export default function Card() {
                             <span className="card-info-flag">Visa Classic</span>
                         </div>
                         <div className="card-info-name">
-                            {loading ? <Skeleton className="card-info-name" height={30} width={420} count={2}/> :
+                            {loading ? <Skeleton className="card-info-name-skeleton" count={2}/> :
                             <h1>{cardData?.name}</h1>
                             }
                         </div>
                         <div className="card-info-rating">
                             <div className="flex">
-                                {loading ? <Skeleton height={20} width={200} /> :
+                                {loading ? <Skeleton height={20} width={150} /> :
                                 <>
                                     <img src={starIcon} alt="Ícone de avaliação do cartão de crédito"/>
                                     <span className="card-info-rating-stars">{cardData?.rating.average_score}</span>

@@ -52,7 +52,7 @@ a{
 }
 
 .mobile{
-  display: none !important;
+  display: none;
 }
 
 .desktop{
@@ -76,10 +76,11 @@ a{
 @media screen and (max-width: 1024px) {
   .mobile{
     display: block;
+    flex: 1;
   }
   
   .desktop{
-    display: none !important;
+    display: none;
   }
 }
 

@@ -1,5 +1,5 @@
-import "./styles.scss"
 import arrowDownIcon from "../../assets/arrow-down-white-icon.svg"
+import "./styles.scss"
 
 export default function Menu(){
     return(

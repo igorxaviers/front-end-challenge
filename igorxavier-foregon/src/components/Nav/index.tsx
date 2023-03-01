@@ -1,6 +1,6 @@
-import "./styles.scss";
 import logo from "../../assets/logo-foregon.svg";
 import hamburger from "../../assets/navbar-toggler-icon.svg";
+import "./styles.scss";
 
 export default function Nav() {
   return (
@@ -32,7 +32,7 @@ export default function Nav() {
                     </div>
                 </div>
 
-                <div className="">
+                <div>
                     <button type="button" className="button button-score">
                         Descubra seu score grátis
                     </button>

@@ -36,6 +36,15 @@
                 font-weight: 500;
                 opacity: 0.8;
             }
+
+            p{
+                font-weight: 500;
+            }
+
+            .card-info-details-skeleton{
+                width: 8.5em;
+                height: 1.2em;
+            }
         }
 
     }
@@ -72,6 +81,7 @@
             margin-top: 2.5em;
             flex-wrap: wrap;
             align-items: flex-start;
+            width: 100%;
 
             .card-info{
                 max-width: 50%;
@@ -81,9 +91,16 @@
 
                 .card-info-details{
                     min-height: 4em;
+                    flex: 1;
 
                     p{
                         font-size: 0.8em;
+                        max-width: 95%;
+                    }
+
+                    .card-info-details-skeleton{
+                        width: 90%;
+                        height: 1em;
                     }
                 }
             }
