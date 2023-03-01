@@ -51,6 +51,16 @@ a{
   padding: 0 1.5em;
 }
 
+.mobile{
+  display: none !important;
+}
+
+.desktop{
+  display: block;
+}
+
+
+
 @media screen and (min-width: 1440px) {
   .container{
     width: 70%;
@@ -60,6 +70,16 @@ a{
 @media screen and (max-width: 1440px) and (min-width: 768px) {
   .container{
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile{
+    display: block;
+  }
+  
+  .desktop{
+    display: none !important;
   }
 }
 
