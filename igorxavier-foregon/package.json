@@ -1,5 +1,7 @@
 {
   "name": "frontend-test-foregon",
+  "description": "Frontend test for Foregon",
+  "author": "Igor Xaiver",
   "private": true,
   "version": "0.0.0",
   "type": "module",
