@@ -15,6 +15,7 @@
 - Axios 📡
 - Scss 🎨
 - React Loading Skeleton 🦴
+- Vite ⚙️
 
 ## 🖥️ Insalando e rodando o projeto
 
@@ -40,6 +41,9 @@
     ```
 
 4. Navegue até a URL [http://localhost:5173/](http://localhost:5173/) no browser. (Pode ser que inicie em outra porta, cheque o terminal 😇).
+
+
+![image](https://user-images.githubusercontent.com/70658593/222231363-02e67895-5b03-4928-9601-e8597ef1a033.png)
 
 
 <div align="center">
